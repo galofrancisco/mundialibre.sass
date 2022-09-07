@@ -1,0 +1,25 @@
+.gridContainer{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns:100%;
+    grid-template-areas: 
+    "title"
+    "fotos";
+}
+.title{
+    grid-area: title;
+    text-align: center;
+    font-family: cursive;
+}
+.fotos{
+    grid-area: fotos;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img{
+        border-radius: 40px;
+        width: 600px;
+        height: 400px;
+    }
+}
+
